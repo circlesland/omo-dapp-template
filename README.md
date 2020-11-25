@@ -1,4 +1,4 @@
-# Omo Dapp Starter
+# Omo Dapp Template
 Snowpack, Svelte, Typescript, Tailwind, Fission 
 
 ## Install
