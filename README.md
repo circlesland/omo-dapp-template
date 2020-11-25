@@ -1,32 +1,36 @@
-# New Project
+# Omo Dapp Starter
+Snowpack, Svelte, Typescript, Tailwind, Fission 
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+## Install
 
-## Available Scripts
+Clone Repo 
+`git clone https://github.com/omoearth/omo-dapp-starter.git`
 
-### Develepment
+Enter directory 
+```bash
+cd omo-dapp-starter
+```
 
+Install with npm
+```bash
+npm i
+```
+
+Start
 ```bash
 npm run dev
 ```
+Go to your browser and open https://localhost:8080
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### Building
+### Building for production
+The `build` script will compile the app for production. By default, the bundle will be created at `/public/build/`, which means your public directory will contain everything you need to run the app.
 
 ```bash
 npm run build
 ```
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-
-### Hostless Deployment
+### Hostless deployment to ipfs via fission
 For more information about fission, read the docs: 
 https://guide.fission.codes/
 
@@ -40,15 +44,13 @@ Setup your account keys with fission
 fission setup --verbose
 ```
 
-Register your dapp and enter path of your build folder (./build)
+Register your dapp and enter path of build folder (./public)
 ```bash
 fission app register --verbose
-👷 Build directory (./build): 
 ```
 
 Publish and delpoy your dapp
 ```bash
 npm run deploy
 ```
-
 This will first build and then publish your dapp to ipfs via the fission service

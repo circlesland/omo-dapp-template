@@ -1,5 +1,5 @@
 import App from "./App.svelte";
-import './main.css';
+import "./main.css";
 
 var app = new App({
   target: document.body,
@@ -14,13 +14,4 @@ if (import.meta.hot) {
   import.meta.hot.dispose(() => {
     app.$destroy();
   });
-};
-
-
-// interface ImportMeta {
-//   hot: {
-//     accept: Function;
-//     dispose: Function;
-//   };
-// }
-
+}
