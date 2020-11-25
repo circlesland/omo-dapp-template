@@ -4,11 +4,11 @@ Snowpack, Svelte, Typescript, Tailwind, Fission
 ## Install
 
 Clone Repo 
-`git clone https://github.com/omoearth/omo-dapp-starter.git`
+`git clone https://github.com/omoearth/omo-dapp-template.git`
 
 Enter directory 
 ```bash
-cd omo-dapp-starter
+cd omo-dapp-template
 ```
 
 Install with npm
